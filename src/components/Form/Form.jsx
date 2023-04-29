@@ -34,13 +34,11 @@ function Form() {
         skills: "",
     });
 
-    console.log(formData);
-
     //input data storing & validating function
     const handleDataChange = (e) => {
         const { name, value, checked } = e.target;
-        //storing input data to state
 
+        //storing input data to state
         if (name === "skills") {
             if (checked) {
                 setFormData((prev) => ({
